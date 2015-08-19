@@ -1,6 +1,6 @@
 {
   "name": "check-referer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Middleware that rejects requests whose referer or origin header does not identify them as having come from a specified domain",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,8 @@
     "origin",
     "check",
     "filter",
-    "domain"
+    "domain",
+    "middleware"
   ],
   "author": "Erin Dachtler <download333@gmail.com>",
   "license": "MIT",
