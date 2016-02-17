@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/download13/check-referer#readme",
   "devDependencies": {
+    "mw-compose": "0.0.0",
     "supertest": "^1.0.1"
   }
 }
