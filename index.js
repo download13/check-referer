@@ -20,13 +20,12 @@ module.exports = function(domains_arg) {
 	});
 
 	return function(req, res, next) {
-		var referer =
+		var parts = url.parse(
 			req.headers.origin ||
 			req.headers.referer ||
 			req.headers.referrer ||
-			'';
-
-		var parts = url.parse(referer);
+			''
+		);
 
 		if(parts.protocol !== 'http:' && parts.protocol !== 'https:') {
 			return res.status(403).send('Referer must have scheme http:// or https://');
