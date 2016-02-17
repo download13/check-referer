@@ -1,6 +1,6 @@
 {
   "name": "check-referer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Middleware that rejects requests whose referer or origin header does not identify them as having come from a specified domain",
   "main": "index.js",
   "scripts": {
