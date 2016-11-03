@@ -7,8 +7,6 @@ Connect middleware for validating the refering domain of incoming requests. Chec
 ```javascript
 var checkReferer = require('check-referer');
 
-var checkRefererMw = ;
-
 app.post('/api/endpoint', checkReferer('mydomain.com'), function(req, res) {
 	// Requests from other platforms will return 403
 	res.send('Hi!');
